@@ -97,7 +97,7 @@ function SearchForm({ setResult }: IProps) {
       <div className="relative w-full max-w-lg">
         <input
           id="searchValue"
-          placeholder="Например: Велико Търново..."
+          placeholder="Велико Търново..."
           className="w-full px-5 py-3 text-lg bg-gray-800 text-white border border-gray-700 rounded-md shadow-md focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 focus:outline-none transition-all duration-300"
           value={searchValue}
           onChange={(e) => onChange(e.target.value)}
