@@ -9,7 +9,7 @@ interface IProps {
 
 function Result({ result, setResult }: IProps) {
   return (
-    <div className="w-full xl:w-[90%] h-[90%] bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-lg p-8 shadow-2xl">
+    <div className="w-full xl:w-[90%] h-full sm:h-[90%] bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 sm:rounded-lg p-8 shadow-2xl">
       <div className="flex justify-end flex-row mb-6">
         <button
           className="text-red-400 flex flex-row cursor-pointer"

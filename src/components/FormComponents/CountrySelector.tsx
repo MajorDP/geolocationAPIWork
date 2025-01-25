@@ -34,8 +34,8 @@ function CountrySelector({ suggestionsState, setSuggestionsState }: IProps) {
   ];
 
   return (
-    <label className="flex flex-row items-center sm:w-full">
-      <span className="mr-3 ">Търси в държава</span>
+    <label className="flex flex-col sm:flex-row items-center sm:w-full">
+      <span className="mr-3 mb-2 sm:mb-0">Търси в държава</span>
       <select
         id="country"
         value={suggestionsState.countryCode || ""}

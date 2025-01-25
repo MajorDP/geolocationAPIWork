@@ -89,16 +89,16 @@ function SearchForm({ setResult }: IProps) {
   return (
     <form
       onSubmit={(e) => onSubmit(e, searchValue)}
-      className="w-full flex flex-col items-center"
+      className="w-full flex flex-col items-center gap-6 text-[18px]"
       onClick={() =>
         setSuggestionsState((prevState) => ({ ...prevState, isOpen: false }))
       }
     >
-      <div className="relative w-full max-w-lg">
+      <div className="relative w-full max-w-lg px-4 sm:px-0">
         <input
           id="searchValue"
           placeholder="Велико Търново..."
-          className="w-full px-5 py-3 text-lg bg-gray-800 text-white border border-gray-700 rounded-md shadow-md focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 focus:outline-none transition-all duration-300"
+          className="w-full px-5 py-3 text-[18px] sm:text-[20px] sm:text-lg bg-gray-800 text-white border border-gray-700 rounded-md shadow-md focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 focus:outline-none transition-all duration-300"
           value={searchValue}
           onChange={(e) => onChange(e.target.value)}
         />
@@ -122,18 +122,18 @@ function SearchForm({ setResult }: IProps) {
           </div>
         )}
       </div>
-      <button className="mt-5 px-4 py-2 text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-white text-[24px] border font-medium border-white rounded-md  hover:border-purple-500 duration-300 cursor-pointer hover:scale-105">
+      <button className="px-4 py-2 text-sm sm:text-base text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-white border font-medium border-white rounded-md hover:border-purple-500 duration-300 cursor-pointer hover:scale-105">
         Търсене
       </button>
-      <h2 className="mt-20 text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-white">
+      <h2 className="text-lg sm:text-xl mt-5 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-white text-center">
         Настройки за търсене:
       </h2>
-      <div className="pt-10 flex flex-col w-full sm:grid sm:grid-cols-2 sm:m-auto sm:w-[60%] justify-items-between items-center justify-center gap-6 text-transparent bg-clip-text  bg-gradient-to-r from-slate-300 to-white">
+      <div className="pt-6 flex flex-col w-full sm:grid sm:grid-cols-2 gap-6 sm:w-[80%] lg:w-[60%] mx-auto text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-white">
+        <ClosestToLocation setSuggestionsState={setSuggestionsState} />
         <MaxSuggestions
           suggestionsState={suggestionsState}
           setSuggestionsState={setSuggestionsState}
         />
-        <ClosestToLocation setSuggestionsState={setSuggestionsState} />
         <CountrySelector
           suggestionsState={suggestionsState}
           setSuggestionsState={setSuggestionsState}

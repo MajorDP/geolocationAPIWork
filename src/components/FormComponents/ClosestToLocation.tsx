@@ -5,7 +5,7 @@ interface IProps {
 }
 function ClosestToLocation({ setSuggestionsState }: IProps) {
   return (
-    <label className="flex flex-row items-center sm:w-full">
+    <label className="flex flex-row justify-center sm:justify-start items-center sm:w-full">
       <input
         type="checkbox"
         className="w-5 h-5 border-gray-700 rounded focus:ring-blue-500 focus:ring-opacity-50"
