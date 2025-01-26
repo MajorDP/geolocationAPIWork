@@ -128,7 +128,7 @@ function SearchForm({ setResult }: IProps) {
       <h2 className="text-lg sm:text-xl mt-5 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-white text-center">
         Настройки за търсене:
       </h2>
-      <div className="pt-6 flex flex-col w-full sm:grid sm:grid-cols-2 gap-6 sm:w-[80%] lg:w-[60%] mx-auto text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-white">
+      <div className="pt-6 flex flex-col w-full sm:grid sm:grid-cols-2 gap-6 sm:w-[80%] bg-clip-text text-transparent lg:w-[60%] mx-auto bg-gradient-to-r from-slate-300 to-white">
         <ClosestToLocation setSuggestionsState={setSuggestionsState} />
         <MaxSuggestions
           suggestionsState={suggestionsState}

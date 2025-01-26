@@ -16,7 +16,7 @@ function CategorySelector({ suggestionsState, setSuggestionsState }: IProps) {
   ];
 
   return (
-    <label className="flex flex-col sm:flex-row items-center sm:w-fit">
+    <label className="lg:ml-15 flex flex-col sm:flex-row items-center sm:w-fit">
       <span className="mr-3 mb-2 sm:mb-0">Вид място</span>
       <select
         id="country"

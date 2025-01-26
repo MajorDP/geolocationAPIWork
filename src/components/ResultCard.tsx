@@ -20,17 +20,17 @@ function ResultCard({ result }: IProps) {
             <p className="font-medium text-black text-center mb-3 text-[18px] lg:text-[20px]">
               Координати на адреса:
             </p>
-            <div className="flex sm:flex-row flex-col items-center h-fit justify-between  text-[16px] lg:text-[20px]">
-              <p>
+            <div className="flex flex-col items-center h-fit justify-between  text-[16px] lg:text-[20px]">
+              <p className=" text-ellipsis mb-3 overflow-hidden whitespace-nowrap">
                 <span className="font-medium">X:</span> {result.location.x}
               </p>
-              <p className="">
+              <p className=" text-ellipsis overflow-hidden whitespace-nowrap">
                 <span className="font-medium">Y:</span> {result.location.y}
               </p>
             </div>
           </div>
           <div className="w-full xl:w-[60%] bg-slate-400 duration-300 rounded-md p-2">
-            <p className="font-medium text-black text-center mb-3 text-[18px] lg:text-[20px]">
+            <p className="font-medium text-black text-center mb-[0.8rem] text-[18px] lg:text-[20px]">
               Обхват на адреса:
             </p>
             <div className="flex flex-col items-center sm:flex-row sm:justify-between text-[15px] sm:text-[18px]  lg:text-[20px] ">
