@@ -5,7 +5,7 @@ export interface IAddress {
     y: number;
   };
   score: number;
-  attributes: Record<string, any>; // Use `Record<string, any>` for an empty object or unknown structure
+  attributes: Record<string, any>;
   extent: {
     xmin: number;
     ymin: number;

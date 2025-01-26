@@ -10,16 +10,8 @@ function CategorySelector({ suggestionsState, setSuggestionsState }: IProps) {
     { label: "Адрес", value: "Address" },
     { label: "Пощенски код", value: "Postal" },
     { label: "Населено място", value: "Populated Place" },
-    { label: "Административна единица", value: "Administrative Division" },
-    { label: "Точка на интерес", value: "Point of Interest" },
     { label: "Забележителност", value: "Landmark" },
-    { label: "Бизнес", value: "Business" },
     { label: "Образование", value: "Education" },
-    { label: "Транспорт", value: "Transportation" },
-    { label: "Развлечения", value: "Entertainment" },
-    { label: "Здравеопазване", value: "Healthcare" },
-    { label: "Пазаруване", value: "Shopping" },
-    { label: "Природна характеристика", value: "Natural Feature" },
     { label: "Хотел", value: "Hotel" },
   ];
 

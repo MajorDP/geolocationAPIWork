@@ -31,6 +31,70 @@ function CountrySelector({ suggestionsState, setSuggestionsState }: IProps) {
       label: "Австралия",
       value: "AUS",
     },
+    {
+      label: "Франция",
+      value: "FRA",
+    },
+    {
+      label: "Италия",
+      value: "ITA",
+    },
+    {
+      label: "Испания",
+      value: "ESP",
+    },
+    {
+      label: "Япония",
+      value: "JPN",
+    },
+    {
+      label: "Китай",
+      value: "CHN",
+    },
+    {
+      label: "Русия",
+      value: "RUS",
+    },
+    {
+      label: "Индия",
+      value: "IND",
+    },
+    {
+      label: "Бразилия",
+      value: "BRA",
+    },
+    {
+      label: "Аржентина",
+      value: "ARG",
+    },
+    {
+      label: "Южна Африка",
+      value: "ZAF",
+    },
+    {
+      label: "Мексико",
+      value: "MEX",
+    },
+    {
+      label: "Норвегия",
+      value: "NOR",
+    },
+    {
+      label: "Швеция",
+      value: "SWE",
+    },
+    {
+      label: "Швейцария",
+      value: "CHE",
+    },
+    {
+      label: "Турция",
+      value: "TUR",
+    },
+    {
+      label: "Гърция",
+      value: "GRC",
+    },
   ];
 
   return (

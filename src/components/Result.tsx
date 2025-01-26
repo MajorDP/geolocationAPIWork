@@ -1,13 +1,22 @@
+import { useEffect } from "react";
 import { IAddress } from "../interfaces/Results";
 import NotFound from "./NotFound";
 import ResultCard from "./ResultCard";
 
 interface IProps {
-  result: [];
+  result: IAddress[];
   setResult: React.Dispatch<React.SetStateAction<[] | null>>;
 }
 
 function Result({ result, setResult }: IProps) {
+  useEffect(() => {
+    if (result.length > 0) {
+      document.title = `Резултати за ${result[0]?.address}`;
+    } else {
+      document.title = "Няма намерени адреси.";
+    }
+  }, [result]);
+
   return (
     <div className="w-full xl:w-[90%] h-full sm:h-[90%] bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 sm:rounded-lg p-8 shadow-2xl">
       <div className="flex justify-end flex-row mb-6">
